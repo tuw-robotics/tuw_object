@@ -1,0 +1,19 @@
+{
+  "shapes": {
+      "frame_id": "map",
+      "shapes": [
+          {
+              "id": 0,
+              "shape": 3,
+              "type": 201,
+              "poses": [
+                  { "position":    { "x" : -8.0, "y" : -8.0 } },
+                  { "position":    { "x" :  8.0, "y" : -8.0 } },
+                  { "position":    { "x" :  8.0, "y" :  8.0 } },
+                  { "position":    { "x" : -8.0, "y" :  8.0 } },
+                  { "position":    { "x" : -8.0, "y" : -8.0 } }                   
+              ]
+          }
+      ]
+  }
+}

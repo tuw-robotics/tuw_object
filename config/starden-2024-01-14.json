@@ -1,0 +1,1963 @@
+{
+ "shapes" : 
+ {
+  "frame_id" : "wgs84",
+  "shapes" : 
+  [
+   {
+    "id" : 0,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801540900000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838264100000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "338.917000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801566200000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837902600000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.067000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 1,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801562400000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838278800000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "338.668000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801603600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837709300000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "345.751000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 2,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801585600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838293800000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "338.730000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801658700000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837215900000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "351.361000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 3,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801609000000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838307000000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "338.726000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801681300000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837218500000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "351.545000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 4,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801632400000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838320800000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "338.820000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801706200000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837219100000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "351.651000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 5,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801653800000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838333700000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "339.213000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801735600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837149500000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.534000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 6,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801675500000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838348400000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "339.674000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801757800000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837168000000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.335000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 7,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801699700000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838362600000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "339.912000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801781700000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837169700000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.338000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 8,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801723200000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838375600000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "340.062000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801807600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837158600000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.471000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 9,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801745600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838387700000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "340.160000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801831700000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837161800000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.448000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 10,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801769200000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838400500000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "340.350000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801856300000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837165800000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.468000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 11,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801794000000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838410400000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "340.791000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801880800000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837167900000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.477000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 12,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801818600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838423800000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "341.185000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801904100000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837171000000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.551000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 13,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801842200000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838437100000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "341.531000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801928500000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837174900000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.591000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 14,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801865400000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838441900000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "341.913000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801952100000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837177700000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.571000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 15,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801889100000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838450700000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "342.121000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801977300000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837181100000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.559000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 16,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801912600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838457300000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "342.308000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.802000400000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837184000000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.482000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 17,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801923300000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838697200000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "339.091000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.802025200000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837187000000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.420000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 18,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801931600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838959500000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "335.490000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.802048700000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837191500000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.339000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 19,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801953500000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838987700000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "335.268000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.802072700000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837194400000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.280000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 20,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801978600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838992300000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "335.543000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.802096600000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837196500000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.162000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 21,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.802001900000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838996900000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "335.688000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.802121200000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.837199300000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "352.090000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.300000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 201
+   },
+   {
+    "id" : 22,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801591150000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.839286890000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "338.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "5.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801602160000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.839013160000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "3.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801642010000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838856520000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801682860000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838684170000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801716360000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838410790000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 401
+   },
+   {
+    "id" : 23,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801532190000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.839105120000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 24,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801638670000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.839066150000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 25,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801720470000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.839201100000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 26,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801573710000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838965540000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 27,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801745080000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.839036350000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 28,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801682230000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838893840000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 29,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801772720000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838947670000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 30,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801729410000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838717660000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 31,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801641510000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838678290000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.500000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "0.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 4,
+    "type" : 302
+   },
+   {
+    "id" : 32,
+    "params" : 
+    {
+     "data" : null
+    },
+    "params_poses" : 
+    [
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801630960000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838890420000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "338.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801597370000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838684150000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "1.000000"
+       }
+      ]
+     },
+     {
+      "data" : 
+      [
+       {
+        "name" : "latitude",
+        "value" : "46.801538930000"
+       },
+       {
+        "name" : "longitude",
+        "value" : "15.838308440000"
+       },
+       {
+        "name" : "altitude",
+        "value" : "343.000000000000"
+       },
+       {
+        "name" : "free",
+        "value" : "0.000000"
+       },
+       {
+        "name" : "occupied",
+        "value" : "2.000000"
+       }
+      ]
+     }
+    ],
+    "poses" : null,
+    "shape" : 3,
+    "type" : 401
+   }
+  ]
+ }
+}
