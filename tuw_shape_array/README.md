@@ -27,3 +27,10 @@ RViz
 ros2 run rviz2 rviz2 -d ./ws01/src/tuw_shape_array/config/cave.rviz
 ros2 run tuw_shape_array shape_server_node --ros-args -p pub_interval:=1 -r shapes:=shape_server/cave -r get:=shape_server/get -r publish:=shape_server/publish -p json:=./ws01/src/tuw_shape_array/config/cave.json
 ```
+
+<div align="center">
+<img src="res/rviz_shape_array.png" alt="shape array msgs with lines" width="400px" /><br>
+<table style="width:400px;"><td>
+tuw_shape_array_msg visualized with the tuw_rviz plugins in RViz2
+</td></table> 
+</div>
