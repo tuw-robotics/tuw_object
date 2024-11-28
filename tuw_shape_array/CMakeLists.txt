@@ -12,7 +12,7 @@ find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(std_srvs REQUIRED)
 find_package(tuw_object_msgs REQUIRED)
-find_package(tuw_ros2_utils REQUIRED)
+find_package(tuw REQUIRED)
 find_package(tuw_json REQUIRED)
 find_package(tf2_ros REQUIRED)
 
@@ -34,6 +34,7 @@ ament_target_dependencies(
   "rclcpp_components"
   "tuw_object_msgs"
   "tuw_json"
+  "tuw"
 )
 
 add_executable(transform_from_wgs84_node src/transform_from_wgs84_node.cpp src/standalone_transform_from_wgs84.cpp)
@@ -48,7 +49,7 @@ ament_target_dependencies(
   "rclcpp_components"
   "tf2_ros"
   "tuw_object_msgs"
-  "tuw_ros2_utils"
+  "tuw"
   "tuw_json"
   GeographicLib
 )

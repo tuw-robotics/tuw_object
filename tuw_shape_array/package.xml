@@ -16,7 +16,7 @@
   <depend>std_srvs</depend>
   <depend>tuw_object_msgs</depend>
   <depend>tuw_json</depend>
-  <depend>tuw_ros2_utils</depend>
+  <depend>tuw</depend>
 
   <buildtool_export_depend>eigen3_cmake_module</buildtool_export_depend>
   <build_export_depend>eigen</build_export_depend>
