@@ -1,0 +1,19 @@
+##enable named panes in tmux.conf with:
+#set -g pane-border-format "#{pane_index} #{pane_title}"
+#set -g pane-border-status bottom
+
+name: pioneer3dx
+#root: /home/markus/projects/tuw-ros
+
+windows:
+  - maps:
+      panes: 
+        - rviz: 
+          - printf '\033]2;%s\033\\' 'rviz'
+          - ros2 run rviz2 rviz2 -d ./ws02/src/tuw_object/tuw_shape_array/config/cave.rviz
+        - shape_server: 
+          - printf '\033]2;%s\033\\' 'shape_server'
+          - ros2 run tuw_shape_array shape_server_node --ros-args  -p pub_interval:=1 -r shapes:=shape_server/shapes -r get:=shape_server/get -r publish:=shape_server/publish -p json:=./ws02/src/tuw_object/tuw_shape_array/config/cave.json
+        
+# ros2 service call /shape_server/get tuw_object_msgs/srv/GetShapeArray
+# ros2 service call /shape_server/get std_srvs/srv/Trigger

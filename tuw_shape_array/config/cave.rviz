@@ -48,19 +48,19 @@ Visualization Manager:
       Plane Cell Count: 10
       Reference Frame: <Fixed Frame>
       Value: true
-    - Alpha: 0.5
-      Class: tuw_object_rviz_plugins/ShapeArray
-      Color: 255; 0; 0
+    - Alpha: 1
+      Class: tuw_shape_array/ShapeArray
+      Color: 255; 25; 0
       Enabled: true
       Name: ShapeArray
-      Size: 0.20000000298023224
+      Size: 0.10000000149011612
       Topic:
         Depth: 5
         Durability Policy: Volatile
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /shape_server/cave
+        Value: /shape_server/shapes
       Value: true
   Enabled: true
   Global Options:
