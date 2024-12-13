@@ -1,0 +1,29 @@
+##enable named panes in tmux.conf with:
+#set -g pane-border-format "#{pane_index} #{pane_title}"
+#set -g pane-border-status bottom
+
+name: pioneer3dx
+#root: /home/markus/projects/tuw-ros
+
+windows:
+  - maps:
+      panes: 
+        - rviz: 
+          - printf '\033]2;%s\033\\' 'rviz'
+          - RVIZ_CONFIG=$(find . -name "vineyard_straden.rviz" | grep "tuw_shape_array/config/")
+          - ros2 run rviz2 rviz2 -d $RVIZ_CONFIG
+        - shape_server: 
+          - printf '\033]2;%s\033\\' 'shape_server'
+          - SHAPE_CONFIG=$(find . -name "vineyard_straden.json" | grep "tuw_shape_array/config/")
+          - ros2 run tuw_shape_array shape_server_node --ros-args  -p pub_interval:=1 -r shapes:=shape_server/shapes_wgs84 -r get:=shape_server/get -r publish:=shape_server/publish -p json:=$SHAPE_CONFIG
+        - shape_transform: 
+          - printf '\033]2;%s\033\\' 'shape_transform'
+          - ros2 run tuw_shape_array transform_from_wgs84_node --ros-args -r shapes_wgs84:=shape_server/shapes_wgs84 -r shapes:=shape_server/shapes
+        - geo_map: 
+          - printf '\033]2;%s\033\\' 'geo_map'
+          - ros2 run tuw_geo_map geo_map_node --ros-args  -p mapimage_folder:=./ws02/src/tuw_geo/tuw_geo_map/config/tuw_geo_map/straden/ -p publish_tf:=true -p frame_relative:=map
+        - lifecycle: 
+          - printf '\033]2;%s\033\\' 'lifecycle'
+          - sleep 1; ros2 lifecycle set /geo_map configure; sleep 1; ros2 lifecycle set /geo_map activate        
+# ros2 service call /shape_server/get tuw_object_msgs/srv/GetShapeArray
+# ros2 service call /shape_server/get std_srvs/srv/Trigger

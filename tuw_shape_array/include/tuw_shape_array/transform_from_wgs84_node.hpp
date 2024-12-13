@@ -7,6 +7,7 @@
 #include <tuw/node.hpp>
 #include <tuw_object_msgs/shape.hpp>
 #include <tuw_object_msgs/msg/shape_array.hpp>
+#include <tuw_object_msgs/srv/get_shape_array.hpp>
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 
@@ -18,10 +19,10 @@ namespace tuw_shape_array
     FromWGS84Node(const std::string &node_name);
 
   private:
-    const std::string topic_name_shaoes_to_subscribe_{"shapes_wgs84"}; /// topic name to subscribe
+    const std::string topic_name_shapes_to_subscribe_{"shapes_wgs84"}; /// topic name to subscribe
     const std::string topic_name_shapes_to_provide_{"shapes"};         /// topic name to provide objects with computed map_points
-    const std::string service_name_get_{"get"};                        /// service name provided for GetShapeArray
-    const std::string service_name_publish_{"publish"};                /// service name to trigger a republish
+    const std::string service_name_publish_to_call{"publish"};         /// service name to trigger a republish
+    const std::string service_name_publish_to_provide{"publish"};      /// service name to trigger a republish
 
     /// subscriber incomming shapes
     rclcpp::Subscription<tuw_object_msgs::msg::ShapeArray>::ConstSharedPtr sub_shapes_;
@@ -49,6 +50,9 @@ namespace tuw_shape_array
 
     std::shared_ptr<tuw_object_msgs::Shape> map_shape_;
 
+    // Transform from utm to map
+    std::shared_ptr<geometry_msgs::msg::TransformStamped> tf_utm_map_;
+
     // timer for loop_rate
     rclcpp::TimerBase::SharedPtr timer_;
 
@@ -58,7 +62,6 @@ namespace tuw_shape_array
     /// Object map objecet need to compute the occupancy grid as well as marker and transforms
     double utm_meridian_convergence_;
 
-    int pub_interval_;              /// static parameter: republishing interval
     int timeout_service_call_;      /// static parameter: how long should the node try to call the GetGraph servide after startup
     std::string frame_map_;         /// static parameter: Name of the map frame, only need if publish_tf == true
     std::string frame_utm_;         /// static parameter: Name of the utm frame, only need if publish_tf == true
@@ -81,7 +84,7 @@ namespace tuw_shape_array
     void declare_parameters();      // declare parameters
     void read_static_parameters();  // ready the static parameters
     bool read_dynamic_parameters(); // ready the dynamic parameters and returns true on changes
-    void publish_transforms_utm_map();
+    void publish_transforms();      // publishes the utm -> map transfrom if it exists
   };
 }
 #endif // TUW_SHAPE_ARRAY__SHAPE_MAP_NODE_HPP_

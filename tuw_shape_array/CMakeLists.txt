@@ -14,8 +14,7 @@ find_package(std_srvs REQUIRED)
 find_package(tuw_object_msgs REQUIRED)
 find_package(tuw REQUIRED)
 find_package(tuw_json REQUIRED)
-find_package(tf2_ros REQUIRED)
-
+find_package(tf2_geometry_msgs REQUIRED)
 
 # Geographiclib installs FindGeographicLib.cmake to this non-standard location
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "/usr/share/cmake/geographiclib/")
@@ -47,7 +46,7 @@ ament_target_dependencies(
   "rclpy"
   "rclcpp"
   "rclcpp_components"
-  "tf2_ros"
+  "tf2_geometry_msgs"
   "tuw_object_msgs"
   "tuw"
   "tuw_json"
