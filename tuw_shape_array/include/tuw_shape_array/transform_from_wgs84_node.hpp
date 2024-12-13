@@ -19,10 +19,8 @@ namespace tuw_shape_array
     FromWGS84Node(const std::string &node_name);
 
   private:
-    const std::string topic_name_shapes_to_subscribe_{"shapes_wgs84"}; /// topic name to subscribe
-    const std::string topic_name_shapes_to_provide_{"shapes"};         /// topic name to provide objects with computed map_points
-    const std::string service_name_publish_to_call{"publish"};         /// service name to trigger a republish
-    const std::string service_name_publish_to_provide{"publish"};      /// service name to trigger a republish
+    const std::string topic_name_shapes_to_subscribe_{"shapes_input"};   /// topic name to subscribe
+    const std::string topic_name_shapes_to_provide_{"shapes"};           /// topic name to provide objects with computed map_points
 
     /// subscriber incomming shapes
     rclcpp::Subscription<tuw_object_msgs::msg::ShapeArray>::ConstSharedPtr sub_shapes_;
@@ -45,9 +43,7 @@ namespace tuw_shape_array
     // last processed shapes
     tuw_object_msgs::msg::ShapeArray::SharedPtr msg_shapes_processed_;
 
-    // Used for publishing the static utm->map
-    // std::unique_ptr<tf2_ros::StaticTransformBroadcaster> broadcaster_utm_;
-
+    // last processed shapes
     std::shared_ptr<tuw_object_msgs::Shape> map_shape_;
 
     // Transform from utm to map

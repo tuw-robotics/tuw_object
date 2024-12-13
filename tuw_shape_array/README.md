@@ -22,16 +22,11 @@
   * Type: *std_srvs::srv::Trigger*
 
 ## Demo
-RViz
-```
- 
-RVIZ_CONFIG=$(find . -name "cave.rviz" | grep "tuw_shape_array/config/")
-SHAPE_CONFIG=$(find . -name "cave.json" | grep "tuw_shape_array/config/")
 
-ros2 run rviz2 rviz2 -d $RVIZ_CONFIG
-ros2 run tuw_shape_array shape_server_node --ros-args -p pub_interval:=1 -r shapes:=shape_server/shapes -r get:=shape_server/get -r publish:=shape_server/publish -p json:=$SHAPE_CONFIG
 ```
-
+# starts rvizs and a shape server
+tmuxinator start -p ws02/src/tuw_object/tuw_shape_array/tmux/cave.yml
+```
 <div align="center">
 <img src="res/rviz_shape_array.png" alt="shape array msgs with lines" width="400px" /><br>
 <table style="width:400px;"><td>
@@ -64,14 +59,9 @@ How the WGS coordinates are coded in the shape_array is shown in the file [viney
   * Type: *std_srvs::srv::Trigger*
 
 ## Demo
-RViz
 ```
- 
-RVIZ_CONFIG=$(find . -name "cave.rviz" | grep "tuw_shape_array/config/")
-SHAPE_CONFIG=$(find . -name "cave.json" | grep "tuw_shape_array/config/")
-
-ros2 run rviz2 rviz2 -d $RVIZ_CONFIG
-ros2 run tuw_shape_array shape_server_node --ros-args -p pub_interval:=1 -r shapes:=shape_server/shapes -r get:=shape_server/get -r publish:=shape_server/publish -p json:=$SHAPE_CONFIG
+# starts rvizs and a shape server with geo image and 
+tmuxinator start -p ws02/src/tuw_object/tuw_shape_array/tmux/vineyard_straden.yml
 ```
 
 <div align="center">

@@ -35,7 +35,7 @@ FromWGS84Node::FromWGS84Node(const std::string& node_name) : Node(node_name)
 
   pub_shapes_transformed_ = this->create_publisher<tuw_object_msgs::msg::ShapeArray>(topic_name_shapes_to_provide_, 10);
   sub_shapes_ = create_subscription<tuw_object_msgs::msg::ShapeArray>(
-      service_name_publish_to_call, 10, std::bind(&FromWGS84Node::callback_shapes, this, _1));
+      topic_name_shapes_to_subscribe_, 10, std::bind(&FromWGS84Node::callback_shapes, this, _1));
 
   timer_ = create_wall_timer(std::chrono::milliseconds(1000), std::bind(&FromWGS84Node::on_timer, this));
 }
