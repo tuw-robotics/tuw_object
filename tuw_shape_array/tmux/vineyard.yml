@@ -15,7 +15,7 @@ windows:
         - shape_server: 
           - printf '\033]2;%s\033\\' 'shape_server'
           - SHAPE_CONFIG=$(find . -name "vineyard_straden.json" | grep "tuw_shape_array/config/")
-          - ros2 run tuw_shape_array shape_server_node --ros-args  -p pub_interval:=1 -r shapes:=shape_server/shapes_wgs84 -r get:=shape_server/get -r publish:=shape_server/publish -p json:=$SHAPE_CONFIG
+          - ros2 run tuw_shape_array shape_server_node --ros-args  -p pub_interval:=0 -r shapes:=shape_server/shapes_wgs84 -r get:=shape_server/get -r publish:=shape_server/publish -p json:=$SHAPE_CONFIG
         - shape_transform: 
           - printf '\033]2;%s\033\\' 'shape_transform'
           - ros2 run tuw_shape_array transform_from_wgs84_node --ros-args -r shapes_input:=shape_server/shapes_wgs84 -r shapes:=shape_server/shapes -p publish_tf_rotation:=true
@@ -24,6 +24,7 @@ windows:
           - ros2 run tuw_geo_map geo_map_node --ros-args  -p mapimage_folder:=./ws02/src/tuw_geo/tuw_geo_map/config/tuw_geo_map/straden/ -p publish_tf:=true -p frame_relative:=map
         - lifecycle: 
           - printf '\033]2;%s\033\\' 'lifecycle'
-          - sleep 1; ros2 lifecycle set /geo_map configure; sleep 1; ros2 lifecycle set /geo_map activate        
+          - sleep 1; ros2 lifecycle set /geo_map configure; sleep 1; ros2 lifecycle set /geo_map activate    
+          - sleep 1; ros2 service call /shape_server/publish std_srvs/srv/Trigger 
+                
 # ros2 service call /shape_server/get tuw_object_msgs/srv/GetShapeArray
-# ros2 service call /shape_server/get std_srvs/srv/Trigger

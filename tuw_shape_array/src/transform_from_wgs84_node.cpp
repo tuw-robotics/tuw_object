@@ -42,8 +42,7 @@ FromWGS84Node::FromWGS84Node(const std::string& node_name) : Node(node_name)
 
 void FromWGS84Node::on_timer()
 {
-  RCLCPP_INFO(this->get_logger(), "on_timer");
-  
+  // RCLCPP_INFO(this->get_logger(), "on_timer");
 }
 void FromWGS84Node::callback_shapes(const tuw_object_msgs::msg::ShapeArray::SharedPtr msg)
 {
@@ -257,7 +256,6 @@ bool FromWGS84Node::read_dynamic_parameters()
 void FromWGS84Node::read_static_parameters()
 {
   get_parameter_and_log("debug_folder", debug_root_folder_);
-  get_parameter_and_log("timeout_service_call", timeout_service_call_);
   get_parameter_and_log("frame_utm", frame_utm_);
   get_parameter_and_log("frame_map", frame_map_);
 }

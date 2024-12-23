@@ -64,6 +64,7 @@ ament_target_dependencies(
   "rclpy"
   "rclcpp"
   "rclcpp_components"
+  "std_srvs"
   "tf2_geometry_msgs"
   "tuw_object_msgs"
   "nav_msgs"

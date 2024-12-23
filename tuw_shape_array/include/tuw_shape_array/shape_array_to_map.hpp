@@ -22,6 +22,7 @@ namespace tuw_shape_array
   private:
     const std::string topic_name_shapes_to_subscribe_{"shapes"};   /// topic name to subscribe
     const std::string topic_name_map_to_provide_{"map"};           /// topic name to provide objects with computed map_points
+    const std::string service_name_trigger_{"publish"};                /// service to call to trigger the shape server
 
     /// subscriber incomming shapes
     rclcpp::Subscription<tuw_object_msgs::msg::ShapeArray>::ConstSharedPtr sub_shapes_;
@@ -38,9 +39,13 @@ namespace tuw_shape_array
     // timer for loop_rate
     rclcpp::TimerBase::SharedPtr timer_;
 
+    // triggers shapes to be published
+    void trigger_request();
+
     // callbacks
     void on_timer();
     
+    int timeout_trigger_publisher_; /// static parameter: Timeout on the service to trigger the publisher on startup
     std::string frame_map_;         /// static parameter: Used to overwrite the map frame_id in the occupancy grid 
     double resolution_;             /// static parameter: Resolution of the generated map [m/pix]
     bool show_map_;                 /// dynamic parameter: Shows the map in a opencv window

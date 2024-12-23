@@ -58,7 +58,6 @@ namespace tuw_shape_array
     /// Object map objecet need to compute the occupancy grid as well as marker and transforms
     double utm_meridian_convergence_;
 
-    int timeout_service_call_;      /// static parameter: how long should the node try to call the GetGraph servide after startup
     std::string frame_map_;         /// static parameter: Name of the map frame, only need if publish_tf == true
     std::string frame_utm_;         /// static parameter: Name of the utm frame, only need if publish_tf == true
     std::string debug_root_folder_; /// static parameter: folder name with debug information from tuw_ tools

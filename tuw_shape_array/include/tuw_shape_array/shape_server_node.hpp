@@ -17,7 +17,7 @@ namespace tuw_shape_array
 
   private:
     const std::string topic_name_{"shapes"};       /// topic name to subscribe for the map topic
-    const std::string service_get_{"get"};  /// service name provided for GetShapeArray
+    const std::string service_get_{"get"};        /// service name provided for GetShapeArray
     const std::string service_publish_{"publish"}; /// service name to trigger a republish
 
     // Publisher for the shapes

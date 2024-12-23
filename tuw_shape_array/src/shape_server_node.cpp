@@ -67,6 +67,7 @@ void ShapeServerNode::callback_publish(
   RCLCPP_INFO(get_logger(), "Handling publish request");
   if(shapes_){
     response->success = true;
+    response->message = "shape server will republish!";
     publish_shapes();
   }
 }

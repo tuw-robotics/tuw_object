@@ -23,9 +23,16 @@
 
 ## Demo
 
+tmuxinator demo with cave
 ```
 # starts rvizs and a shape server
 tmuxinator start -p ws02/src/tuw_object/tuw_shape_array/tmux/cave.yml
+```
+tmuxinator demo with vine yard and gps coordinates
+```
+# starts rvizs, shape server, transform_from_wgs84, geo_map if avaible.
+tmuxinator start -p ws02/src/tuw_object/tuw_shape_array/tmux/vineyard.yml
+ros2 service call /shape_server/publish std_srvs/srv/Trigger
 ```
 <div align="center">
 <img src="res/rviz_shape_array.png" alt="shape array msgs with lines" width="400px" /><br>
