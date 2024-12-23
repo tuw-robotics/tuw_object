@@ -21,6 +21,7 @@ namespace tuw_shape_array
   private:
     const std::string topic_name_shapes_to_subscribe_{"shapes_input"};   /// topic name to subscribe
     const std::string topic_name_shapes_to_provide_{"shapes"};           /// topic name to provide objects with computed map_points
+    const std::string service_name_trigger_{"publish"};                /// service to call to trigger the shape server
 
     /// subscriber incomming shapes
     rclcpp::Subscription<tuw_object_msgs::msg::ShapeArray>::ConstSharedPtr sub_shapes_;
@@ -49,6 +50,9 @@ namespace tuw_shape_array
     // Transform from utm to map
     std::shared_ptr<geometry_msgs::msg::TransformStamped> tf_utm_map_;
 
+    // triggers shapes to be published
+    void trigger_request();
+
     // timer for loop_rate
     rclcpp::TimerBase::SharedPtr timer_;
 
@@ -58,6 +62,7 @@ namespace tuw_shape_array
     /// Object map objecet need to compute the occupancy grid as well as marker and transforms
     double utm_meridian_convergence_;
 
+    int timeout_trigger_publisher_; /// static parameter: Timeout on the service to trigger the publisher on startup
     std::string frame_map_;         /// static parameter: Name of the map frame, only need if publish_tf == true
     std::string frame_utm_;         /// static parameter: Name of the utm frame, only need if publish_tf == true
     std::string debug_root_folder_; /// static parameter: folder name with debug information from tuw_ tools
