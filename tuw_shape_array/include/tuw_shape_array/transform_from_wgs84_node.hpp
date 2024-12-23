@@ -67,8 +67,6 @@ namespace tuw_shape_array
     bool publish_tf_rotation_;      /// dynamic parameter: On true it adds a rotiation to the tf published caused by the projection. Only in combinaltion with publish_tf.
     bool publish_marker_;           /// dynamic parameter: on true shapes are published using marker msgs
     double map_border_;             /// dynamic parameter: Border on the created map [meter]
-    double resolution_;             /// dynamic parameter: Resolution of the generated map [m/pix]
-    bool show_map_;                 /// dynamic parameter: Shows the map in a opencv window
     double utm_z_offset_;           /// dynamic parameter: z offset on the location of the map
 
     /// starts the computation

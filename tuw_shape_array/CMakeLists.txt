@@ -11,6 +11,7 @@ find_package(rclpy REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_components REQUIRED)
 find_package(std_srvs REQUIRED)
+find_package(nav_msgs REQUIRED)
 find_package(tuw_object_msgs REQUIRED)
 find_package(tuw REQUIRED)
 find_package(tuw_json REQUIRED)
@@ -53,6 +54,21 @@ ament_target_dependencies(
   GeographicLib
 )
 
+add_executable(shape_array_to_map_node src/shape_array_to_map.cpp src/standalone_shape_array_to_map.cpp)
+target_include_directories(shape_array_to_map_node PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>)
+target_compile_features(shape_array_to_map_node PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+ament_target_dependencies(
+  shape_array_to_map_node
+  "rclpy"
+  "rclcpp"
+  "rclcpp_components"
+  "tf2_geometry_msgs"
+  "tuw_object_msgs"
+  "nav_msgs"
+  "tuw"
+)
 
 install(
   DIRECTORY include/
@@ -60,6 +76,7 @@ install(
 )
 
 install(TARGETS 
+  shape_array_to_map_node
   shape_server_node 
   transform_from_wgs84_node
   DESTINATION lib/${PROJECT_NAME}

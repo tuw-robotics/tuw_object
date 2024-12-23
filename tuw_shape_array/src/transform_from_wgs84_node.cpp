@@ -237,10 +237,7 @@ void FromWGS84Node::declare_parameters()
   declare_parameters_with_description("publish_marker", true, "On true objects are published using marker msgs");
   declare_parameters_with_description("frame_map", "map", "Name of the map frame, only need if publish_tf == true");
   declare_parameters_with_description("frame_utm", "utm", "Name of the utm frame, only need if publish_tf == true");
-  declare_parameters_with_description("resolution", 0.1, "Resolution of the generated map [m/pix]");
   declare_parameters_with_description("map_border", 10.1, "Border on the created map [meter]");
-  declare_parameters_with_description("show_map", false, "Shows the map in a opencv window");
-  declare_parameters_with_description("utm_z_offset", 0.0, "offest on Z for the utm -> map frame");
 }
 
 bool FromWGS84Node::read_dynamic_parameters()
@@ -248,13 +245,10 @@ bool FromWGS84Node::read_dynamic_parameters()
   static bool first_call = true;  /// varible to identify the first time the fnc was called to init all variables
   bool changes = false;           /// used to identify changes
 
-  update_parameter_and_log("resolution", resolution_, changes, first_call);
   update_parameter_and_log("map_border", map_border_, changes, first_call);
   update_parameter_and_log("publish_marker", publish_marker_, changes, first_call);
-  update_parameter_and_log("show_map", show_map_, changes, first_call);
   update_parameter_and_log("publish_tf", publish_tf_, changes, first_call);
   update_parameter_and_log("publish_tf_rotation", publish_tf_rotation_, changes, first_call);
-  update_parameter_and_log("utm_z_offset", utm_z_offset_, changes, first_call);
 
   first_call = false;
   return changes;
