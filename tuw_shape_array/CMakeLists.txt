@@ -21,7 +21,7 @@ find_package(tf2_geometry_msgs REQUIRED)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "/usr/share/cmake/geographiclib/")
 find_package(GeographicLib REQUIRED)
 
-add_executable(shape_server_node src/shape_server_node.cpp src/standalone_shape_server.cpp)
+add_executable(shape_server_node src/shape_server_node.cpp src/shape_server_standalone.cpp)
 target_include_directories(shape_server_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -37,7 +37,7 @@ ament_target_dependencies(
   "tuw"
 )
 
-add_executable(transform_from_wgs84_node src/transform_from_wgs84_node.cpp src/standalone_transform_from_wgs84.cpp)
+add_executable(transform_from_wgs84_node src/transform_from_wgs84_node.cpp src/transform_from_wgs84_standalone.cpp)
 target_include_directories(transform_from_wgs84_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -55,7 +55,7 @@ ament_target_dependencies(
   GeographicLib
 )
 
-add_executable(shape_array_to_map_node src/shape_array_to_map.cpp src/standalone_shape_array_to_map.cpp)
+add_executable(shape_array_to_map_node src/shape_array_to_map_node.cpp src/shape_array_to_map_standalone.cpp)
 target_include_directories(shape_array_to_map_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)

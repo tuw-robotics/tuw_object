@@ -1,6 +1,6 @@
 #include <filesystem>
 #include <tuw_object_msgs/shape_array.hpp>
-#include "tuw_shape_array/shape_array_to_map.hpp"
+#include "tuw_shape_array/shape_array_to_map_node.hpp"
 #include <std_srvs/srv/trigger.hpp>
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2_ros/transform_broadcaster.h>

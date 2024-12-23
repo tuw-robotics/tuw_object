@@ -24,7 +24,7 @@ windows:
           - ros2 run tuw_geo_map geo_map_node --ros-args  -p mapimage_folder:=./ws02/src/tuw_geo/tuw_geo_map/config/tuw_geo_map/straden/ -p publish_tf:=true -p frame_relative:=map
         - lifecycle: 
           - printf '\033]2;%s\033\\' 'lifecycle'
-          - sleep 1; ros2 lifecycle set /geo_map configure; sleep 1; ros2 lifecycle set /geo_map activate    
-          - sleep 1; ros2 service call /shape_server/publish std_srvs/srv/Trigger 
+          - sleep 1; ros2 lifecycle set /geo_map configure; sleep 1; ros2 lifecycle set /geo_map activate   # actovate geo_map
+          - sleep 1; ros2 service call /shape_server/publish std_srvs/srv/Trigger   # trigger a republish
                 
 # ros2 service call /shape_server/get tuw_object_msgs/srv/GetShapeArray

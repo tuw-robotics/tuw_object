@@ -1,7 +1,7 @@
 #include <memory>
 
 #include "rclcpp/rclcpp.hpp"
-#include "tuw_shape_array/shape_array_to_map.hpp"
+#include "tuw_shape_array/shape_array_to_map_node.hpp"
 
 int main(int argc, char * argv[])
 {
