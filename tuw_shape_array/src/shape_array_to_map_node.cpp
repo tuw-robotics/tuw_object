@@ -83,6 +83,15 @@ void ShapeArrayToMap::callback_shapes(const tuw_object_msgs::msg::ShapeArray::Sh
 void ShapeArrayToMap::start_process(const tuw_object_msgs::msg::ShapeArray::SharedPtr msg)
 {
   RCLCPP_INFO(this->get_logger(), "start_process");
+  if(!shape_array) {
+    shape_array = std::make_shared<tuw_shape_array::ShapeArray>();
+  }
+  /*
+  Frame frame;
+  if(!shape_array->find_frame(*msg, frame)) {
+    return;
+  }
+  */
 }
 
 

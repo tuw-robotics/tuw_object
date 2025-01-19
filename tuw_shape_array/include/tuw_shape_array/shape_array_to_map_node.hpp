@@ -11,6 +11,8 @@
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <nav_msgs/msg/occupancy_grid.hpp>
+#include "tuw_shape_array/shape_array.hpp"
+
 
 namespace tuw_shape_array
 {
@@ -32,6 +34,9 @@ namespace tuw_shape_array
 
     /// publisher for shapes transformed
     rclcpp::Publisher<nav_msgs::msg::OccupancyGrid>::SharedPtr pub_occupancy_grid_map_;
+
+    // 
+    std::shared_ptr<ShapeArray> shape_array;
 
     // last received shapes
     tuw_object_msgs::msg::ShapeArray::SharedPtr msg_shapes_received_;

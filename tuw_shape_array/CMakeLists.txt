@@ -55,7 +55,7 @@ ament_target_dependencies(
   GeographicLib
 )
 
-add_executable(shape_array_to_map_node src/shape_array_to_map_node.cpp src/shape_array_to_map_standalone.cpp)
+add_executable(shape_array_to_map_node src/shape_array.cpp src/shape_array_to_map_node.cpp src/shape_array_to_map_standalone.cpp)
 target_include_directories(shape_array_to_map_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)

@@ -10,11 +10,11 @@ windows:
       panes: 
         - rviz: 
           - printf '\033]2;%s\033\\' 'rviz'
-          - RVIZ_CONFIG=$(find . -name "vineyard_straden.rviz" | grep "tuw_shape_array/config/")
+          - RVIZ_CONFIG=$(find . -name "vineyard_straden.rviz" | grep "tuw_shape_array/config/"); echo $RVIZ_CONFIG
           - ros2 run rviz2 rviz2 -d $RVIZ_CONFIG
         - shape_server: 
           - printf '\033]2;%s\033\\' 'shape_server'
-          - SHAPE_CONFIG=$(find . -name "vineyard_straden.json" | grep "tuw_shape_array/config/")
+          - SHAPE_CONFIG=$(find . -name "vineyard_straden.json" | grep "tuw_shape_array/config/"); echo $SHAPE_CONFIG
           - ros2 run tuw_shape_array shape_server_node --ros-args  -p pub_interval:=0 -r shapes:=shape_server/shapes_wgs84 -r get:=shape_server/get -r publish:=shape_server/publish -p json:=$SHAPE_CONFIG
         - shape_transform: 
           - printf '\033]2;%s\033\\' 'shape_transform'
