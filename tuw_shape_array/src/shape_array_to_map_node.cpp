@@ -82,16 +82,26 @@ void ShapeArrayToMap::callback_shapes(const tuw_object_msgs::msg::ShapeArray::Sh
 
 void ShapeArrayToMap::start_process(const tuw_object_msgs::msg::ShapeArray::SharedPtr msg)
 {
+  tuw_object_msgs::ShapeArray* shape_array = static_cast<tuw_object_msgs::ShapeArray*>(msg.get()); 
   RCLCPP_INFO(this->get_logger(), "start_process");
-  if(!shape_array) {
-    shape_array = std::make_shared<tuw_shape_array::ShapeArray>();
+  if(!shape_array_to_occupancy_grid_) {
+    shape_array_to_occupancy_grid_ = std::make_shared<tuw_shape_array::ShapeArrayToOccupancyGrid>();
   }
-  /*
-  Frame frame;
-  if(!shape_array->find_frame(*msg, frame)) {
+  
+  if(!shape_array_to_occupancy_grid_->find_frame(*shape_array)) {
     return;
   }
-  */
+  auto header = msg->header;
+  if(!frame_id_.empty()){
+    header.frame_id = frame_id_;
+  }
+  if(!shape_array_to_occupancy_grid_->create_occupancy_grid(resolution_, header)) {
+    return;
+  }
+  if(!shape_array_to_occupancy_grid_->draw(*shape_array)) {
+    return;
+  }
+  pub_occupancy_grid_map_->publish(shape_array_to_occupancy_grid_->occupancy_grid());
 }
 
 
@@ -101,7 +111,7 @@ void ShapeArrayToMap::declare_parameters()
                                       "Timeout on the service to trigger the publisher on startup [sec]. "
                                       "On zero not service will be called on startup",
                                       0, 600, 1);
-  declare_parameters_with_description("frame_map", "", "Used to overwrite the map frame_id in the occupancy grid");
+  declare_parameters_with_description("frame_id", "", "Used to overwrite the map frame_id in the occupancy grid");
   declare_parameters_with_description("resolution", 0.1, "Resolution of the generated map [m/pix]");
   declare_parameters_with_description("show_map", true, "Shows the map in a opencv window");
 }
@@ -121,5 +131,5 @@ void ShapeArrayToMap::read_static_parameters()
 {
   get_parameter_and_log("timeout_trigger_publisher", timeout_trigger_publisher_);
   get_parameter_and_log("resolution", resolution_);
-  get_parameter_and_log("frame_map", frame_map_);
+  get_parameter_and_log("frame_id", frame_id_);
 }

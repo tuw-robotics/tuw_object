@@ -221,6 +221,7 @@ void FromWGS84Node::compute_map_frame(tuw_object_msgs::msg::ShapeArray::SharedPt
   map_shape_->poses[1].position.x += border;
   map_shape_->poses[1].position.y += border;
   map_shape_->poses[1].position.z += border;
+  /*
   /// make the map frame size nice
   double dx = std::ceil(map_shape_->poses[1].position.x - map_shape_->poses[0].position.x);
   double dy = std::ceil(map_shape_->poses[1].position.y - map_shape_->poses[0].position.y);
@@ -228,7 +229,7 @@ void FromWGS84Node::compute_map_frame(tuw_object_msgs::msg::ShapeArray::SharedPt
   map_shape_->poses[1].position.x = map_shape_->poses[0].position.x + dx;
   map_shape_->poses[1].position.y = map_shape_->poses[0].position.y + dy;
   map_shape_->poses[1].position.z = map_shape_->poses[0].position.z + dz;
-
+  */
   shapes->shapes.push_back(*map_shape_);
 
   tf2::Quaternion q(0, 0, 0, 1);

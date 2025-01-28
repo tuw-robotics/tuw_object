@@ -11,7 +11,7 @@
 #include <geometry_msgs/msg/transform_stamped.hpp>
 #include <geometry_msgs/msg/pose_stamped.hpp>
 #include <nav_msgs/msg/occupancy_grid.hpp>
-#include "tuw_shape_array/shape_array.hpp"
+#include "tuw_shape_array/shape_array_occupancy_grid.hpp"
 
 
 namespace tuw_shape_array
@@ -36,7 +36,7 @@ namespace tuw_shape_array
     rclcpp::Publisher<nav_msgs::msg::OccupancyGrid>::SharedPtr pub_occupancy_grid_map_;
 
     // 
-    std::shared_ptr<ShapeArray> shape_array;
+    std::shared_ptr<ShapeArrayToOccupancyGrid> shape_array_to_occupancy_grid_;
 
     // last received shapes
     tuw_object_msgs::msg::ShapeArray::SharedPtr msg_shapes_received_;
@@ -51,7 +51,7 @@ namespace tuw_shape_array
     void on_timer();
     
     int timeout_trigger_publisher_; /// static parameter: Timeout on the service to trigger the publisher on startup
-    std::string frame_map_;         /// static parameter: Used to overwrite the map frame_id in the occupancy grid 
+    std::string frame_id_;         /// static parameter: Used to overwrite the map frame_id in the occupancy grid 
     double resolution_;             /// static parameter: Resolution of the generated map [m/pix]
     bool show_map_;                 /// dynamic parameter: Shows the map in a opencv window
 

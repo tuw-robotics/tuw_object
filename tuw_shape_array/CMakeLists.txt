@@ -16,6 +16,7 @@ find_package(tuw_object_msgs REQUIRED)
 find_package(tuw REQUIRED)
 find_package(tuw_json REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(OpenCV REQUIRED COMPONENTS core highgui imgcodecs imgproc videoio)
 
 # Geographiclib installs FindGeographicLib.cmake to this non-standard location
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "/usr/share/cmake/geographiclib/")
@@ -55,7 +56,10 @@ ament_target_dependencies(
   GeographicLib
 )
 
-add_executable(shape_array_to_map_node src/shape_array.cpp src/shape_array_to_map_node.cpp src/shape_array_to_map_standalone.cpp)
+add_executable(shape_array_to_map_node 
+  src/shape_array_occupancy_grid.cpp 
+  src/shape_array_to_map_node.cpp 
+  src/shape_array_to_map_standalone.cpp)
 target_include_directories(shape_array_to_map_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
@@ -70,6 +74,7 @@ ament_target_dependencies(
   "tuw_object_msgs"
   "nav_msgs"
   "tuw"
+  OpenCV
 )
 
 install(
