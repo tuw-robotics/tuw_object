@@ -27,6 +27,8 @@ namespace tuw_shape_array
       return *occupancy_grid_;
     }
 
+    cv::Point ShapeArrayToOccupancyGrid::project(const tuw_geometry_msgs::Point &point);
+
   private:
     double min_x, min_y, min_z, max_x, max_y, max_z;
     std::shared_ptr<nav_msgs::msg::OccupancyGrid> occupancy_grid_;
@@ -34,4 +36,4 @@ namespace tuw_shape_array
 
   };
 }
-#endif // TUW_OBJECT_MAP_SERVER__SHAPE_ARRAY_HPP_
+#endif  // TUW_OBJECT_MAP_SERVER__SHAPE_ARRAY_HPP_

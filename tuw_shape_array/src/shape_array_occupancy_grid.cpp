@@ -76,6 +76,9 @@ bool ShapeArrayToOccupancyGrid::create_occupancy_grid(double resolution, const s
   }
   return true;
 }
+cv::Point ShapeArrayToOccupancyGrid::project(const tuw_geometry_msgs::Point &point){
+
+}
 
 bool ShapeArrayToOccupancyGrid::draw(const tuw_object_msgs::ShapeArray &shape_array){
 
