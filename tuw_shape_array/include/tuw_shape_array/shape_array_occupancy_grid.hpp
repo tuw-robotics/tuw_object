@@ -27,8 +27,6 @@ namespace tuw_shape_array
       return *occupancy_grid_;
     }
 
-    cv::Point ShapeArrayToOccupancyGrid::project(const tuw_geometry_msgs::Point &point);
-
   private:
 
     bool draw_type_plant_wine_row(const tuw_object_msgs::ShapeArray &shape_array);

@@ -89,9 +89,6 @@ bool ShapeArrayToOccupancyGrid::create_occupancy_grid(double resolution, const s
   }
   return true;
 }
-cv::Point ShapeArrayToOccupancyGrid::project(const tuw_geometry_msgs::Point &point){
-
-}
 
 bool ShapeArrayToOccupancyGrid::draw(const tuw_object_msgs::ShapeArray &shape_array){
 
@@ -101,6 +98,7 @@ bool ShapeArrayToOccupancyGrid::draw(const tuw_object_msgs::ShapeArray &shape_ar
   draw_type_obstacle_tree(shape_array);
   return true;
 }
+
 bool ShapeArrayToOccupancyGrid::draw_type_plant_wine_row(const tuw_object_msgs::ShapeArray &shape_array){
 
   for (auto &shape : shape_array.shapes){
