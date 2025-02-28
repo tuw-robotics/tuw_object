@@ -28,7 +28,14 @@ namespace tuw_shape_array
     }
 
   private:
-    double min_x, min_y, min_z, max_x, max_y, max_z;
+
+    bool draw_type_plant_wine_row(const tuw_object_msgs::ShapeArray &shape_array);
+    bool draw_type_transit_street(const tuw_object_msgs::ShapeArray &shape_array);
+    bool draw_type_obstacle_tree(const tuw_object_msgs::ShapeArray &shape_array);
+
+    cv::Point w2m(const geometry_msgs::msg::Point &pw) const;
+    double w2m(double d) const;
+    double min_x, min_y, min_z, max_x, max_y, max_z, resolution_;
     std::shared_ptr<nav_msgs::msg::OccupancyGrid> occupancy_grid_;
     cv::Mat map_;
 
